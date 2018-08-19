@@ -1,7 +1,7 @@
 // config used by server side only
-const dbHost = process.env.DB_HOST || 'ds117821.mlab.com';
-const dbPort = process.env.DB_PORT || 17821;
-const dbName = process.env.DB_NAME || 'golden';
+const dbHost = process.env.DB_HOST || 'ds123852.mlab.com';
+const dbPort = process.env.DB_PORT || 23852;
+const dbName = process.env.DB_NAME || 'zakupi';
 const dbUser = process.env.DB_USER || 'shopuser';
 const dbPass = process.env.DB_PASS || 'shopuser1';
 const dbCred =
@@ -11,7 +11,7 @@ const dbUrl =
 	process.env.DB_URL || `mongodb://${dbCred}${dbHost}:${dbPort}/${dbName}`;
 
 module.exports = {
-	// used by Store (server side)  mongodb://<dbuser>:<dbpassword>@ds117821.mlab.com:17821/golden
+	// used by Store (server side)  mongodb://<dbuser>:  ds123852.mlab.com:23852/zakupi 
 	apiBaseUrl: `http://localhost:3001/api/v1`,
 
 	// used by Store (server and client side)
@@ -58,7 +58,7 @@ module.exports = {
 	themeAssetsUploadUrl: '/assets/images',
 
 	// store UI language
-	language: 'en',
+	language: 'ru',
 
 	// used by API
 	orderStartNumber: 1000,

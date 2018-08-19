@@ -12,7 +12,7 @@ const CONNECT_OPTIONS = {
 	useNewUrlParser: true
 };
 
-const DEFAULT_LANGUAGE = 'english';
+const DEFAULT_LANGUAGE = 'russian';
 
 const addPage = async (db, pageObject) => {
 	const count = await db
